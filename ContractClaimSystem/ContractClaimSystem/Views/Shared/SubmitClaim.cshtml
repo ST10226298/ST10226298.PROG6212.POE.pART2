@@ -1,0 +1,26 @@
+﻿@model ContractClaimSystem.ViewModels.ClaimViewModel
+@{
+    Layout = "_Layout";
+}
+
+<h2>Submit a Claim</h2>
+
+<form asp-action="SubmitClaim" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label>Lecturer Name</label>
+        <input asp-for="LecturerName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Claim Date</label>
+        <input asp-for="ClaimDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label>Claim Amount</label>
+        <input asp-for="ClaimAmount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Supporting Documents</label>
+        <input asp-for="SupportingDocuments" type="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

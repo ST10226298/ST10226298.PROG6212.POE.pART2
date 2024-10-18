@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="form-section">
+        <h1 class="title">Contract Monthly Claim System</h1>
+        <h3 class="subtitle">Lecturer Claim Submission</h3>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Lecturer Name" name="LecturerName">
+            </div>
+            <div class="mb-3">
+                <input type="date" class="form-control" name="ClaimDate" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Claim Amount" name="ClaimAmount">
+            </div>
+            <div class="mb-3">
+                <input type="file" class="form-control" name="SupportingDocuments">
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-success">Submit Claim</button>
+            </div>
+        </form>
+
+        <h3 class="subtitle mt-5">Coordinator/Manager Approval</h3>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Claim ID" name="ClaimID">
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-secondary">Update Status</button>
+        </div>
+
+        <h3 class="subtitle mt-5">Claim Status Tracking</h3>
+        <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Enter Claim ID to Track" name="TrackClaimID">
+        </div>
+    </div>
+</div>
+
+<footer class="text-center mt-5">
+    <p>© 2023 ContractClaimSystem</p>
+</footer>

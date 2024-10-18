@@ -1,0 +1,44 @@
+.container {
+    max-width: 960px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #1C160C;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #A18249;
+    margin-top: 10px;
+}
+
+.form-section {
+    background-color: #FFFFFF;
+    border: 1px solid #E9DFCE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control {
+    border-color: #E9DFCE;
+    color: #1C160C;
+    height: 50px;
+    padding: 15px;
+}
+
+.btn-success {
+    background-color: #019863;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: #F4EFE6;
+    color: #1C160C;
+}
+
+footer {
+    background-color: #F4EFE6;
+    padding: 20px;
+}
